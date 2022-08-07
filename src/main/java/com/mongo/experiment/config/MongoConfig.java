@@ -18,7 +18,7 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
     @Override
     public MongoClient mongoClient() {
         ConnectionString connectionString
-                = new ConnectionString("mongodb+srv://avacadodev2050:PxQnNKlJrTj0YdqQ@cluster0.8pnwi.mongodb.net/myFirstDatabase?authSource=admin");
+                = new ConnectionString("");
         MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .build();
